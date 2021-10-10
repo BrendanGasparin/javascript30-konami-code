@@ -14,11 +14,9 @@
   window.addEventListener('keyup', (e) => {
     pressed.push(e.key);
     pressed.splice(-numKeys - 1, pressed.length - numKeys);
-    console.log(pressed);
 
     if(pressed.join('').includes(secretCode)) {
       cornify_add();
-      return;
     }
   });
 </script>
